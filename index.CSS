@@ -1,0 +1,521 @@
+#Logo{
+    border: 6px solid #f110da;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #00d0ff;
+    text-align: center;
+    font-family: "bad script",cursive;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+#Logo .txt{
+    color: yellow;
+    background: rgb(15, 15, 15);
+    border-radius: 50%;
+    border: 6px solid black;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "bad script",cursive;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+section{
+    padding: 10px 0;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 1.2rem;
+    color: #21087fdd;
+    text-align: center;
+    margin: 20px;
+    font-family: "bad script",cursive;
+}
+p{
+    padding: 10px;
+    font-size: 1.1rem;
+
+}
+
+
+/*Nav Vsertion moble */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 50px;
+    position:absolute;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+nav *{ 
+    color:hsl(60, 84%, 50%);
+    font-family: "bad script",cursive;
+
+}
+
+nav input[ type="checkbox"],.nav-list{
+    display: none;
+    font-family: "bad script" cursive;   
+}
+nav input[type= "checkbox"]:checked + .nav-list {
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    top: 80px;
+    background: #0c0c0cab;
+    width: 100%;
+    left: 0;
+    padding-left: 0px;
+    text-align: center;
+    font-family: "bad script" ,cursive;
+    font-size: 1.1em;;
+    
+}
+.nav-list li {
+    margin: 5px 5px
+
+}
+
+#section_de_bienvenu{
+    background:url(ouze.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    text-align: center;
+
+}
+
+#section_de_bienvenu_div{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #ff00d0;
+    border-radius: 5%;
+    border: 3px solid blue;
+    font-family: "bad script" cursive;
+   
+
+}
+/*Section de description mobile*/
+
+nav {
+  font-size: 1.1rem;
+  position: fixed;
+  width: 10;
+  transition: 1s;
+  height: 60px;
+  }
+  nav label {
+    display: block;
+  }
+
+  nav .nav-list {
+    display: none;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav .nav-list a {
+    transition: 2s;
+    border-bottom: 0px solid transparent;
+  }
+
+  .nav-scrolling-active {
+    background:black;
+    transition: 1s;
+  }
+
+/*partis repris de la laptop*/
+
+
+#section_description{
+    min-height: 20vh;
+}
+
+#section_description .conteneur{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+#section_description .conteneur .card {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+
+/*------******** a propos de la falémé**************------------------------------*/
+#section_a_propos_falémé{
+    min-height: 100 vh;
+    
+}
+
+#section_a_propos_falémé .conteneur {
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+}
+
+#section_a_propos_falémé .card{
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+#section_a_propos_falémé .image_div {
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 10px;
+}
+
+#section_a_propos_falémé img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+/************section image en version mobile *****************************/
+#image_du_falémé{
+min-height: 100vh;
+}
+#image_du_falémé .conteneur{
+    column-count: 1;
+}
+#image_du_falémé .conteneur .box {
+    min-width: 100px; 
+    min-width: 100px; 
+}
+#image_du_falémé  img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+/*effet parallax en vertion mobile*/
+#para_div{
+    background: url(ouze.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    padding:5px 0px ;
+}
+
+ /*Section commentaire du site falémé*/
+ #temoignage_section{
+    min-height: 100vh;
+ }
+
+ #temoignage_section .conteneur {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px; 
+ }
+ #temoignage_section .card{
+    background: hsl(122, 95%, 48%);
+    margin-top: 50px;
+    margin-bottom: 20px;
+ }
+
+ #temoignage_section .stars_div {
+    text-align: center;
+ }
+ #temoignage_section .stars_div i {
+    color: #3700ff;
+ }
+ /******************Section formulaire falémé***************/
+ #contact{
+    min-height: 100vh;
+    background-color: #f110da;
+ } 
+ #contact .conteneur {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: center;
+ }
+ #contact .div_îcone {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px 0px;
+
+ }
+ #contact .div_form{
+    margin: 0px 20px;
+
+ }
+ #contact .form_falémé{
+    margin: 5px 0px;
+    padding:5px 0px ;
+ }
+ #contact  .f-falémé{
+    width: 100%;
+    border: none;
+    border-bottom: .5px solid black;
+    outline: none;
+    font-size: 1.5rem;
+ }
+ #contact .form_falémé .f-falémé:focus{
+    font-size: 1.1rem;
+ }
+ #contact  .maps-div{
+    padding: 20px;
+    height: 60vh;
+ }
+ #contact  .maps-div iframe {
+    height: 100%;
+    width: 100%;
+ }
+ /******************le footer du css***************/
+ footer {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 255, 0.835);
+    padding: 1.1rem;
+ }
+
+  /******************RESPONSIVE TABLETTE***************/
+
+  /*----------------------------RESPONSIVE---------------------------------------------*/
+  /*----------------------------Tablette description section responsive---------------------------------------------*/
+
+  @media screen and (min-width: 769px) {
+   #section_description .conteneur{
+    padding: 0px 50px;
+
+   }
+
+#section_description,
+#section_a_propos_falémé{
+    margin: 2px 0px;
+}
+
+/*
+#image_du_falémé,
+#para_div,
+#temoignage_section,
+#contact{
+    margin: 0px 0px ;
+}
+
+*/
+
+
+   section{
+    padding: 0px 0;
+}
+   P { 
+    font-size: 3rem;
+   }
+   h2 {
+    font-size: 3rem;
+   }
+   #section_description .conteneur{
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 100vh;
+
+   }
+   #section_description .conteneur .card{
+    display: grid;
+    grid-template-columns: 1fr  ; 
+    border: 3px solid black;
+    border-radius: 10%;
+   }
+   #section_description .conteneur .card2 {
+    grid-template-areas: text_div;
+   }
+   #section_description .conteneur .card2 .text_div {
+   grid-area: text_div;
+   }
+   
+   #section_description .conteneur .card .text_div{
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5rem;
+   }
+   #section_description .conteneur .card .text_div p{
+    font-size: 1.2rem;
+  }
+
+    
+/*----------------------Tablette a propos section responsive--------------------------*/
+#section_a_propos_falémé{
+    min-height: 40vh;
+}
+#section_a_propos_falémé .conteneur{
+    margin: 0px 20px;
+}
+#section_a_propos_falémé .conteneur  .card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#section_a_propos_falémé  img {
+    object-fit: cover;
+}
+#section_a_propos_falémé .text_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+/*----------------------Tablette Image section--------------------------*/
+ #image_du_falémé .conteneur{
+    column-count: 2;
+    gap: 0;   
+}
+/*----------------------Tablette SECTION de temoignage-------------------------*/
+#temoignage_section{
+    min-height: 30vh;
+}
+#temoignage_section .conteneur {
+    margin: 0px 100px;
+}
+/*----------------------Tablette SECTION de CONTACT-------------------------*/
+#contact .conteneur {
+    grid-gap: 30px;
+
+}
+ #contact .div_form{
+ margin: 0 120px;
+ }
+  #contact .div_îcone {
+    font-size: 2rem;
+  }
+
+}
+/*----------------------Version ordinateur -------------------------*/
+@media screen and (min-width:1024px) {
+     
+
+/*----------------------Version ordinateur ma barrre de navigation -------------------------*/
+nav {
+    font-size: 1.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: 1s;
+    height: 60px;
+  }
+
+  nav label {
+    display: none;
+  }
+
+  nav .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+  }
+
+  nav .nav-list a {
+    transition: 2s;
+    border-bottom: 0px solid transparent;
+  }
+
+  nav .nav-list a:hover {
+    margin-left: 5px;
+    font-size: 3rem;
+    border-bottom: 4px solid red;
+    transition: 1s;
+  }
+
+  .nav-scrolling-active {
+    background:#6611e6;
+    transition: 1s;
+  }
+
+  /*-------------laptop welcome-section---------------*/
+  #welcome-section {
+    background-position-y: top;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  h2 {
+    margin: 25px;
+    font-size: 3rem;
+  }
+
+  /*-------------laptop description-section---------------*/
+  #section_description .conteneur {
+    margin: 0px 100px;
+  }
+
+  /*-------------laptop gallery-section---------------*/
+  #image_du_falémé .conteneur {
+    display: grid;
+    grid-template: "1fr 1fr  " ;
+    padding: 0px 20px;
+  }
+
+  #image_du_falémé .box-a,
+  .box-b {
+    grid-row: span 3;
+  }
+
+  #image_du_falémé .box-c,
+
+  .box-a {
+    grid-column: span 3;
+  }
+
+  #image_du_falémé .box {
+    transition: 1s;
+  }
+
+  #image_du_falémé .box:hover {
+    transform: scale(1.05);
+    transition: 1s;
+  }
+
+  #image_du_falémé img {
+    object-fit: cover;
+  }
+
+  /*-------------laptop review-section---------------*/
+  #temoignage_section .conteneur {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*-------------laptop review-section---------------*/
+  #contac .div_form {
+    margin: 0px 300px;
+  }
+
+  #contact .div_form * {
+    font-size: 1.5rem;
+  }
+
+  #contact .form-falémé:focus {
+    font-size: 1.5rem;
+  }
+}
